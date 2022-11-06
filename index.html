@@ -5,31 +5,40 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>PetShop</title>
 </head>
 <body>
     <header>
+        <div class="header1">
         <div>
-            <a href="#">Grandes ofertas en comederos</a>
-            <span><h4>Español</h4></span>
-            <span><h4>ARG$</h4></span>
+            <a class="oferta" href="#">Grandes ofertas en comederos</a>
         </div>
         <div>
-            <a href="#"><img src="img/Logo.png" alt="logo-petshop"></a>         
-            <ul>
-                <li><img src="img/pawprint 1 (1).png" alt="patita de perro"><a href="#">Categoria</a></li>
-                <li><img src="img/pawprint 1 (1).png" alt="patita de perro"><a href="#">Pets</a></li>
-                <li><img src="img/pawprint 1 (1).png" alt="patita de perro"><a href="#">Nosotros</a></li>
-                <li><img src="img/pawprint 1 (1).png" alt="patita de perro"><a href="#">Contactos</a></li>
+           <select class="option" name="" id="">
+            <option  value="">Español</option>
+           </select>
+           <select class="option" name="" id="">
+            <option  value="">ARG$</option>
+           </select>
+        </div>
+        </div>
+        <div class="header2">
+            <a class="logo" href="#"><img src="img/Logo.png" alt="logo-petshop"></a>         
+            <ul class="nav">
+                <li class="nav__li"><img class="nav__li-img"
+                    src="img/pawprint 1 (1).png" alt="patita de perro"><a href="#">Categoria</a></li>
+                <li class="nav__li"><img class="nav__li-img"  src="img/pawprint 1 (1).png" alt="patita de perro"><a href="#">Pets</a></li>
+                <li class="nav__li"><img class="nav__li-img"  src="img/pawprint 1 (1).png" alt="patita de perro"><a href="#">Nosotros</a></li>
+                <li class="nav__li"><img class="nav__li-img"  src="img/pawprint 1 (1).png" alt="patita de perro"><a href="#">Contactos</a></li>
             </ul>
         </div>
     </header>
     <main>
-        <div>
-            <img src="img/bowl-and-pet-daities-on-green-background 1.png" alt="Bowl con Comida">
-            <h2>¡Es un placer tenerte aqui!</h2>
-            <h3>¡Comederos en descuento!</h3>
-            <button>COMEDEROS</button>
+        <div class="banner">            <h2 class="text__banner">¡Es un placer tenerte aqui!</h2>
+            <h3 class="text__banner-1">¡Comederos en descuento!</h3>
+            <button class="boton__comederos">COMEDEROS</button>
+        
         </div>
         <section>
             <img src="img/pawprint 1.png" alt="patita de perro">
@@ -98,6 +107,14 @@
         </div>
         <div>
             <p>Todos los derechos reservados FRONT-END</p>
+        </div>
+        <div class="iconos">
+            <a  href="https://es-la.facebook.com/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://www.linkedin.com/home" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+            <a  href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+            <a  href="https://github.com/" target="_blank"><i class="fa-brands fa-github"></i></a>
+        
+
         </div>
     </footer>
     
