@@ -6,7 +6,7 @@
 }
 
 body{
-    background-color: #d2d2d2;
+    background-color:#ffffff;
     font-family: 'Roboto', sans-serif;
 }
 
@@ -59,12 +59,26 @@ ul .nav__li{
     
 }
 
+ul .nav__li:hover{
+    scale: 1.2;
+    
+}
+
 .nav .nav__li a {
     text-decoration: none;
     color: #ffffff;
+    padding: .5rem;
+}
+
+ul .nav__li a:hover{
+   
+    color: #000000;
 }
 
 .banner{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
     background-image: url(../img/bowl-and-pet-daities-on-green-background\ 1.png);
     background-repeat: no-repeat;
     background-size: cover;
@@ -73,13 +87,18 @@ ul .nav__li{
     height: 45rem;
 }
 
+.banner__text{
+    display: flex;
+    flex-direction: column;
+    margin-right: 10rem;
+
+}
+
 .text__banner{
-    position: relative;
-    left: 60%;
-    top: 30%;
     background-color: #ffffff;
-    width: 23rem;
+    width: 27rem;
     height: 3.5rem;
+    margin-bottom: 2rem;
     text-align: center;
     padding-top: .5rem;
     border-radius: 5px;
@@ -89,26 +108,36 @@ ul .nav__li{
     line-height: 35px;
 }
 
-.text__banner-1{
-    position: relative;
-    left: 65%;
-    top: 35%;
+.text__banner-1{   
+    align-self: center;
+    margin-bottom:2rem ;   
     font-style: normal;
     font-weight: 400;
-    font-size: 16px;
+    font-size: 20px;
 
 }
 
 .boton__comederos{
-    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 10rem;
-    height: 3.5rem;
-    left: 66%;
-    top: 45%;
+    height: 3rem;
+    align-self: center;
     color:#ffffff ;
     background: #F0A83E;
     border: none;
     border-radius: 5px;
+    text-decoration: none;
+}
+
+.boton__comederos:hover{
+    scale: 1.2;
+    background-color: #ffffff;
+    color: #f48609;
+    font-weight: bold;
+    border: solid .5px #f49506;
+    box-shadow: 3px 6px 5px #f2861a;
 }
 
 .proDestacados{
@@ -307,15 +336,18 @@ ul .nav__li{
     color: #ffffff;
 }
 .iconos{
+    
     margin-left: 2rem;
 }
 
 .iconos a{
-    margin-left: 1rem;
+    
+    margin-left: 2rem;
     color: #ffffff;
 }
 
 .iconos a i:hover{
-    scale: 1.5;
+    scale: 2.5;
     color: #F0A83E;
 }
+
