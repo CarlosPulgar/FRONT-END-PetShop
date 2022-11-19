@@ -4,7 +4,6 @@
     margin: 0;
   
 }
-
 body{
     background-color:#ffffff;
     font-family: 'Roboto', sans-serif;
@@ -40,17 +39,24 @@ body{
     background: #F0A83E;
     flex-wrap: wrap;
 }
+
 .logo{
     margin-top: 2.5rem;
     margin-left: 4rem;
     scale: 1.4;
 }
 
+
+
 .nav{
     display: flex;
     list-style: none;
     margin-top: 2.5rem;
-    flex-wrap: wrap;
+    
+}
+
+.nav i{
+    display: none;
 }
 
 ul .nav__li{
@@ -114,6 +120,7 @@ ul .nav__li a:hover{
     font-style: normal;
     font-weight: 400;
     font-size: 20px;
+    
 
 }
 
@@ -246,7 +253,7 @@ ul .nav__li a:hover{
     display: flex;
     margin-top: 5rem;
     background-color: #F0A83E;
-    height: 5rem;
+    height: auto;
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
@@ -351,3 +358,116 @@ ul .nav__li a:hover{
     color: #F0A83E;
 }
 
+/* RESPONSIVE TABLETS */
+
+@media (max-width:1015px) {
+    .nav{
+        margin-top: 1.5rem;
+    }
+    .nav li{
+        display:none;
+
+    }
+
+    .nav i{
+        display: block;
+        font-size: 40px;
+        margin-right: 2rem;
+        
+    }
+    .suscribe{
+        width: 100%;
+        margin: 0;
+        justify-content: space-evenly;
+    }
+
+    .icon__suscribe{
+        margin:0 20%;
+    }
+
+    .suscribe__email{
+       
+        margin: 1rem 20%;
+        height: auto;
+    }
+}
+
+/* RESPONSIVE MOVILES */
+
+@media (max-width:550px){
+
+    .nav i{
+        display: block;
+        font-size: 35px;
+        margin-right: 1.5rem;
+        
+    }
+
+    .banner{
+        justify-content: center;
+    }
+
+    .banner__text{
+        margin-right: 1rem;
+        scale: .9;
+    }
+
+    .text__banner{
+        width: 23rem;
+        font-size: 25px;
+        margin-left: 1rem;
+    }
+
+    .titulo{
+        font-size: 30px;
+    }
+
+    .lista{
+        width: 90%;
+    }
+
+    .list-item{
+        margin: 2rem 1rem 0rem 0rem;
+        justify-content: center;
+    }
+
+    .list_link{
+        font-size: 13px;
+        
+    }
+
+    .form_contactos{
+        width: 100%;
+        text-align: center;
+    }
+    .input{
+        width: 300px;
+    }
+
+    .btn__contacto{
+        width: 7rem;
+    }
+
+    .input__suscribe{
+       width: 13rem;
+        
+    }
+
+    .container__footer{
+        flex-direction: column-reverse;
+        justify-content: center;
+    }
+    .logo__footer{
+        margin-bottom: 1rem;
+    }
+
+    .text__footer{
+        font-size: 10px;
+    }
+
+    .iconos a{
+    
+        margin-left: .5rem;
+        color: #ffffff;
+    }
+}
